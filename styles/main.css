@@ -1,0 +1,189 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #e5e5e5;
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  color: #fff; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; }
+
+.header {
+  position: relative;
+  height: 800px;
+  padding: 48px 20px 0;
+  border-bottom-left-radius: 200px;
+  background-color: #008aff; }
+  .header__logo {
+    margin-right: 64px; }
+  .header__nav {
+    max-width: 1024px;
+    margin: 0 auto 42px; }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto; }
+  .header__discription {
+    margin-top: 120px; }
+  .header__title {
+    width: 490px;
+    height: 136px;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: -2px;
+    color: #fff; }
+  .header__text {
+    width: 460px;
+    height: 81px;
+    margin-bottom: 56px;
+    font-family: "Open sans", sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff; }
+  .header__button {
+    width: 226px;
+    height: 50px; }
+  .header__slider {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 43%;
+    min-width: 500px;
+    height: 680px;
+    border-top-left-radius: 200px;
+    background-image: url(../images/slider/slider_1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+.logo {
+  width: 60px;
+  height: 28px; }
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 1024px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    line-height: 28px;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
+  .nav__item:last-of-type {
+    margin-left: 6vw; }
+  .nav__link {
+    color: #fff;
+    white-space: nowrap;
+    -webkit-transition: color 0.3s;
+    transition: color 0.3s; }
+    .nav__link:hover {
+      color: #ff9c8e; }
+    .nav__link--active {
+      position: relative; }
+      .nav__link--active::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        border-radius: 4px;
+        background-color: #ff9c8e;
+        width: 100%; }
+
+.button {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: bold;
+  border-radius: 64px;
+  border-style: none;
+  color: #fff;
+  background: #ff9c8e;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s; }
+  .button:hover {
+    background-color: #fff; }
+  .button:hover {
+    color: #008aff; }
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .slider__button {
+    width: 32px;
+    height: 32px;
+    margin-top: 570px;
+    border-radius: 50%;
+    background-color: #fff;
+    border-style: none;
+    cursor: pointer;
+    outline: none; }
+    .slider__button--left {
+      margin-left: 48px;
+      background-image: url(../images/slider/vector_l.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .slider__button--right {
+      margin-left: 8px;
+      background-image: url(../images/slider/vector_r.png);
+      background-position: center;
+      background-repeat: no-repeat; }
+    .slider__button:hover {
+      border: 1px solid #008aff; }
+    .slider__button:active {
+      background-color: #008aff; }
+  .slider__photo-info {
+    margin-left: 24px;
+    margin-top: 564px; }
+  .slider__subtitle {
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    color: #fff; }
+  .slider__text {
+    font-family: "Open sans", sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    width: 264px;
+    color: #fff; }
+
+/*# sourceMappingURL=main.css.map */
