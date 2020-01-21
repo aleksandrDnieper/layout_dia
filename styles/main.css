@@ -32,6 +32,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+html,
+body {
+  overflow-x: hidden; }
+
 body {
   margin: 0;
   background: #f2f9ff;
@@ -124,8 +128,7 @@ form {
     height: 100vh;
     padding: 0; }
     .header__container {
-      max-width: 100%;
-      max-height: 80vh; }
+      width: 100%; }
     .header__block-text {
       margin-top: 4vh;
       max-height: 80vh; }
@@ -165,15 +168,12 @@ form {
     margin-left: 6vw; }
   .nav__link {
     color: #fff;
-    white-space: nowrap;
-    -webkit-transition: color 0.3s;
-    transition: color 0.3s; }
-    .nav__link:hover {
+    white-space: nowrap; }
+    .nav__link:hover, .nav__link:focus {
       color: #ff9c8e; }
     .nav__link--active {
       position: relative; }
       .nav__link--active::after {
-        display: block;
         bottom: -8px;
         left: 0;
         height: 2px;
@@ -259,6 +259,17 @@ form {
       text-align: center; }
     .nav__link {
       display: block; }
+      .nav__link--active {
+        position: relative; }
+        .nav__link--active::after {
+          content: "";
+          position: absolute;
+          bottom: -5vh;
+          left: 0;
+          height: 2px;
+          border-radius: 4px;
+          background-color: #ff9c8e;
+          width: 100%; }
   .menu-icon {
     display: block; }
     .menu-icon__line {
@@ -823,6 +834,10 @@ form {
     display: inline-block;
     max-width: 362px;
     margin-left: 10vw; }
+    @media screen and (max-width: 800px) {
+      .approach__block-text {
+        margin: 0 auto;
+        display: block; } }
   .approach__decor-text {
     color: #fff; }
   .approach__subtitle {
@@ -877,7 +892,7 @@ form {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover; }
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 800px) {
       .approach__image {
         display: none; } }
 
@@ -892,10 +907,11 @@ form {
     .approach__wrapper {
       padding: 130px 2vw 0; }
     .approach__block-text {
+      display: block;
       margin: 0 auto; }
     .approach__paragraph {
       max-width: 100%;
-      margin-left: 90px; }
+      margin-left: 100px; }
     .approach__image {
       display: none; } }
 
@@ -1372,7 +1388,8 @@ form {
       line-height: 22px; }
     .form__input:focus {
       border-bottom: 2px solid white;
-      opacity: 1; }
+      opacity: 1;
+      outline: none; }
 
 .icons .fa {
   width: 32px;
